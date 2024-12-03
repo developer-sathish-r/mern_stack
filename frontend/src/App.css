@@ -1,0 +1,76 @@
+.upload-filename{
+    align-items: center;
+    color: green;
+}
+ .carousel{
+ width: 100%;
+ height: 85vh ;
+}
+
+body {
+    background-color: var(--my-color);
+  }
+  
+/* 
+:root {
+    --primary-blue: rgb(0, 0, 255);
+    --secondary-blue: rgb(96, 96, 182);
+  
+    --text-primary-light: black;
+    --text-primary-dark: white;
+  
+    /* --text-secondary-light: rgb(70, 70, 70);
+    --text-secondary-dark: rgb(160, 160, 160);
+  
+    --bg-primary-light: white;
+    --bg-primary-dark: black;
+  
+    --bg-secondary-light: rgb(212, 212, 212);
+    --bg-secondary-dark: rgb(34, 34, 34);
+  
+    --bg-navbar-light: rgb(104, 104, 255);
+    --bg-navbar-dark: rgb(29, 29, 58); */
+  /* }
+  
+  .light-theme {
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --bg-navbar: var(--bg-navbar-light);
+  }
+  
+  .dark-theme {
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --bg-navbar: var(--bg-navbar-dark);
+  } */ 
+
+  :root {
+    --color-default: #fff;
+  }
+  @media (prefers-color-scheme: dark){
+      :root{
+          --color-default: #252b30;
+      }
+  }
+  [data-theme='dark'] {
+    --color-default: #252b30;
+  }
+  [data-theme='black'] {
+    --color-default: #000000;
+  }
+  [data-theme='🌸'] {
+    --color-default: #ffabc8;
+  }
+  [data-theme='🐬'] {
+    --color-default: #7ec6ff;
+  }
+  [data-theme='🐤'] {
+    --color-default: #ffd65a;
+  }
+  body {
+      background-color: var(--color-default);
+  }
